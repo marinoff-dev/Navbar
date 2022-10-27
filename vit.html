@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site vitrine</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="image/logo.png" style="width: 9%;" class="logo">
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Nos services</a></li>
+                <li><a href="#">Nos tarifs</a></li>
+                <li><a href="#">Notre philosophie</a></li>
+                <li><a href="#">Bordeaux en live</a></li>
+                <li><a href="#">Qui sommes-nous ?</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Rejoignez-nous</a></li>
+            </ul>
+        </div>
+        <img src="image/menu.png" alt="menu-hamburger" class="menu-hamburger">
+    </nav>
+    <section class="div1">
+        <h1>Confiez-nous vos clés, on<br>s'occupe de tout !</h1>
+        <button><a href="">Découvrez nos services</a></button>
+    </section>   
+
+    <div class="ensembl">
+        <div>   
+            <img src="image/6.jpg">
+            <h4>Gestion intégrale de votre bien</h4>
+            <p>Avant de prendre en charge la gestion de votre bien,<br>nous faisons tout pour le valoriser.</p>
+        </div>
+
+        <div>
+            <img src="image/6.jpg">
+            <h4>Check in/check out</h4>
+            <p>Accueillir les voyageurs mêmes lorsqu'ils subissent<br>des contre-temps, telle est notre mission.</p>
+        </div>
+
+        <div>
+            <img src="image/6.jpg">
+            <h4>Ménage et linge</h4>
+            <p>Notre team clean-up a été spécialement formée<br>pour bichonner votre bien après le départ des<br>hôtes.</p>
+        </div>
+    </div>
+ 
+</body>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navlinks = document.querySelector(".nav-links")
+        menuHamburger.addEventListener('click', ()=>{navlinks.classList.toggle('mobile-menu')})
+    </script>
+
+</html>
